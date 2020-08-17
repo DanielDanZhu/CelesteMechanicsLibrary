@@ -34,6 +34,9 @@ class Header extends React.Component {
             <Route path="/about">
               <About />
             </Route>
+            <Route path="/super">
+              <Page name={"super"}/>
+            </Route>
             <Route path="/hyper">
               <Page name={"hyper"}/>
             </Route>

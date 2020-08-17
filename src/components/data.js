@@ -9,7 +9,7 @@ export const data = {
       ]
     ],
     videos: [
-      "https://www.youtube.com/watch?v=qq0RXbhtFFs&t=241s"
+      "https://www.youtube.com/watch?v=qq0RXbhtFFs"
     ]
   },
   "hyper": {

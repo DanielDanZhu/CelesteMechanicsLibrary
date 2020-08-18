@@ -5,9 +5,6 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import {
-  Dropdown,
-} from 'react-bootstrap';
 import icon from './celestestrawberry.png'
 
 import Home from './Home.js'

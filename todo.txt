@@ -1,0 +1,13 @@
+- web dev:
+  [x] url routing
+  [x] page pulling from json backend
+  [ ] footer
+  [ ] feedback form
+  [ ] search bar
+  [ ] hit counter
+
+
+- content:
+  [ ] populate json
+  [ ] concept videos
+  [ ] tricks library

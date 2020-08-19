@@ -8,10 +8,9 @@ import { data } from './data';
 import { keywords } from './keywords';
 
 class Page extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0)
+  constructor(props) {
+    super(props);
   }
-
   render() {
     const items = [[]]
 

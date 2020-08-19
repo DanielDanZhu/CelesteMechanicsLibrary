@@ -13,23 +13,11 @@ class Page extends React.Component {
   }
 
   render() {
-    const items = [[]]
+    const items = []
 
     for (let i = 0; i < data[this.props.name].text.length; i++) {
       data[this.props.name].text[i].forEach(element => {
-        //keyword hyperlinks
-        let pushed = false
-        for (const word in keywords) {
-          if (element.includes(word)) {
-            items.push(element.slice(0, element.indexOf(word)))
-            items.push(<Link to={keywords[word]} style={{textDecoration: 'none'}}>{word}</Link>)
-            items.push(element.slice(element.indexOf(word)+word.length))
-            pushed = true
-          }
-        }
-        if (!pushed) {
-          items.push(element)
-        }
+        items.push(element)
         items.push(<br />)
       });
 
@@ -45,6 +33,23 @@ class Page extends React.Component {
             />
           </div>
         )
+      }
+    }
+
+    //adding hyperlinks to relevant pages
+    let keywords_set = Object.assign({}, keywords)
+    for (let i = 0; i < items.length; i++) {
+      if (typeof(items[i]) == 'string') {
+        for (const word in keywords_set) {
+          if (items[i].toLowerCase().includes(word)) {
+            let phrase = items[i], orig = phrase.slice(phrase.toLowerCase().indexOf(word), phrase.toLowerCase().indexOf(word)+word.length)
+            items.splice(i, 0, phrase.slice(0, phrase.toLowerCase().indexOf(word)))
+            items.splice(i+1, 1, <Link to={keywords_set[word]} style={{textDecoration: 'none'}}>{orig}</Link>)
+            items.splice(i+2, 0, phrase.slice(phrase.toLowerCase().indexOf(word)+word.length))
+            i += 2
+            delete keywords_set[word]
+          }
+        }
       }
     }
 

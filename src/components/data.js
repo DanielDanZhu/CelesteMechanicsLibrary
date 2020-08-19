@@ -24,7 +24,7 @@ export const data = {
         "Jumping against a wall (aka walljump) can result in one of several outcomes depending on what inputs are held:",
         "1. Holding climb (direction is irrelevant): ",
         "Climbjump",
-        "2. Holding in/ away from the wall: ",
+        "2. Holding in/away from the wall: ",
         "Full walljump",
         "3. Holding nothing or up/down",
         "Neutral walljump",

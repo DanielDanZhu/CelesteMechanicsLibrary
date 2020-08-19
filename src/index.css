@@ -111,7 +111,16 @@ hr {
 }
 
 .page_body{
+  margin-top: 25px;
   line-height: 40px;
+}
+
+.about_body{
+  position: absolute;
+  width: 1000px;
+  right: 0px;
+  line-height: 70px;
+  font-size: 28px;
 }
 
 .video_wrapper{
@@ -146,4 +155,9 @@ hr {
 .indent{
   margin-left: 40px;
   font-size: 20px;
+}
+
+.bear {
+  height: 300px;
+  width: 400px;
 }

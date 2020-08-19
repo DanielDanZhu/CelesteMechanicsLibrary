@@ -15,6 +15,7 @@ class Page extends React.Component {
   render() {
     const items = []
 
+    //turns data.js into jsx
     for (let i = 0; i < data[this.props.name].text.length; i++) {
       data[this.props.name].text[i].forEach(element => {
         items.push(element)

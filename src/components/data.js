@@ -1,3 +1,5 @@
+//<b> for subheaders, goto keywords.js to add hyperlinks
+
 export const data = {
   "walk": {
       title: "Walking",
@@ -21,6 +23,7 @@ export const data = {
         "in that direction."
       ],
       [
+        "<b>Types of Jumps:",
         "Jumping against a wall (aka wall jump) can result in one of several outcomes depending on what inputs are held:",
         "1. Holding climb (direction is irrelevant): ",
         "Climb jump",
@@ -38,6 +41,34 @@ export const data = {
     ],
     videos: [
       "https://www.youtube.com/watch?v=qq0RXbhtFFs"
+    ]
+  },
+  "dash": {
+      title: "Dashing",
+    text: [
+      [
+        "The dash quickly sends Madeline in one of 8 directions.",
+        "Dashing is performed by pressing the designated dash button and can be done while grounded or aerial.",
+        "The dash lasts 14 frames. The first 4 frames are freeze frames (also freezes the entire stage and " +
+        "in game timer for 3 frames.) Dashing can be canceled by jumping if Madeline is grounded at the time " +
+        "of the jump, resulting in a super dash or a hyper dash.",
+        "After dashing, Madeline loses her dashable state (indicated by her blue hair) and does not regain " +
+        "her dash until she becomes grounded or gets a dash refill.",
+        "recovery time"
+      ],
+      [
+        "<b>Speed ",
+        "During the last 10 frames of non-diagonal dashes, Madeline has 240 absolute speed." +
+        "dashes",
+        "This is not the case, however, for ", "",
+        "<b>Misc",
+        "crouched dash grounded or aerial -> demodash",
+        "", "", "", ""
+
+      ]
+    ],
+    videos: [
+      "https://www.youtube.com/watch?v=9jHwwJgSTR4"
     ]
   },
   "super": {

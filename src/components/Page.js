@@ -37,18 +37,24 @@ class Page extends React.Component {
       }
     }
 
-    //adding hyperlinks to relevant pages
+    //making subheaders and adding hyperlinks to relevant pages
     let keywords_set = Object.assign({}, keywords)
     for (let i = 0; i < items.length; i++) {
       if (typeof(items[i]) == 'string') {
-        for (const word in keywords_set) {
-          if (items[i].toLowerCase().includes(word)) {
-            let phrase = items[i], orig = phrase.slice(phrase.toLowerCase().indexOf(word), phrase.toLowerCase().indexOf(word)+word.length)
-            items.splice(i, 0, phrase.slice(0, phrase.toLowerCase().indexOf(word)))
-            items.splice(i+1, 1, <Link to={keywords_set[word]} style={{textDecoration: 'none'}}>{orig}</Link>)
-            items.splice(i+2, 0, phrase.slice(phrase.toLowerCase().indexOf(word)+word.length))
-            i += 2
-            delete keywords_set[word]
+        if (items[i].includes("<b>")) {
+          let slice = items[i].slice(3)
+          items.splice(i, 2, <div class="subheader">{slice}</div>)
+        }
+        else {
+          for (const word in keywords_set) {
+            if (items[i].toLowerCase().includes(word)) {
+              let phrase = items[i], orig = phrase.slice(phrase.toLowerCase().indexOf(word), phrase.toLowerCase().indexOf(word)+word.length)
+              items.splice(i, 0, phrase.slice(0, phrase.toLowerCase().indexOf(word)))
+              items.splice(i+1, 1, <Link to={keywords_set[word]} style={{textDecoration: 'none'}}>{orig}</Link>)
+              items.splice(i+2, 0, phrase.slice(phrase.toLowerCase().indexOf(word)+word.length))
+              i += 2
+              delete keywords_set[word]
+            }
           }
         }
       }

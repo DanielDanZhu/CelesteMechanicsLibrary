@@ -1,6 +1,7 @@
 - web dev:
   [x] url routing
   [x] page pulling from json backend
+  [x] hyperlinks
   [ ] footer
   [ ] feedback form
   [ ] search bar

@@ -161,3 +161,8 @@ hr {
   height: 300px;
   width: 400px;
 }
+
+.subheader {
+  font-size: 25px;
+  font-weight: bold;
+}

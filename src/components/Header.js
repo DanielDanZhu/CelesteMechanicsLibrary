@@ -36,6 +36,9 @@ class Header extends React.Component {
               <Route path="/jump">
                 <Page name={"jump"}/>
               </Route>
+              <Route path="/dash">
+                <Page name={"dash"}/>
+              </Route>
               <Route path="/super">
                 <Page name={"super"}/>
               </Route>

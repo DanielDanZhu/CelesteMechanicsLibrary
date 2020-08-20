@@ -2,11 +2,11 @@
   [x] url routing
   [x] page pulling from json backend
   [x] hyperlinks
-  [ ] footer
+  [x] footer
   [ ] feedback form
   [ ] search bar
   [ ] hit counter
-
+  [ ] dark mode
 
 - content:
   [ ] populate json

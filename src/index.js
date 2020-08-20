@@ -2,10 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route
 } from 'react-router-dom';
 import './index.css';
 
 import Header from './components/Header.js'
+import Page from './components/Page.js'
+import Home from './components/Home.js'
+import Contact from './components/Contact.js'
+import About from './components/About.js'
 import Footer from './components/Footer.js'
 
 class App extends React.Component {
@@ -17,6 +23,35 @@ class App extends React.Component {
     return (
       <div class="app">
         <Header />
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/walk">
+            <Page name={"walk"}/>
+          </Route>
+          <Route path="/jump">
+            <Page name={"jump"}/>
+          </Route>
+          <Route path="/dash">
+            <Page name={"dash"}/>
+          </Route>
+          <Route path="/super">
+            <Page name={"super"}/>
+          </Route>
+          <Route path="/hyper">
+            <Page name={"hyper"}/>
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     )
   }

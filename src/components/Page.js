@@ -7,6 +7,8 @@ import {
 import { data } from './data';
 import { keywords } from './keywords';
 
+import Footer from "./Footer.js";
+
 class Page extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -61,14 +63,17 @@ class Page extends React.Component {
     }
 
     return (
-      <div class="page">
-        <div class="page_header">
-          {data[this.props.name].title}
+      <div class="screen">
+        <div class="page">
+          <div class="page_header">
+            {data[this.props.name].title}
+          </div>
+          <hr />
+          <div class="page_body">
+            {items}
+          </div>
         </div>
-        <hr />
-        <div class="page_body">
-          {items}
-        </div>
+        <Footer />
       </div>
     )
   }

@@ -48,6 +48,18 @@ class App extends React.Component {
           <Route path="/hyper">
             <Page name={"hyper"}/>
           </Route>
+          <Route path="/extend">
+            <Page name={"extension"}/>
+          </Route>
+          <Route path="/reverse">
+            <Page name={"reversal"}/>
+          </Route>
+          <Route path="/wavedash">
+            <Page name={"wavedash"}/>
+          </Route>
+          <Route path="/coyote">
+            <Page name={"coyote"}/>
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>

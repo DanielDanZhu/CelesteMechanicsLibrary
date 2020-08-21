@@ -1,4 +1,17 @@
 //<b> for subheaders, goto keywords.js to add hyperlinks
+/* TEMPLATE
+"route": {
+    title: "NAME",
+  text: [
+    [
+      ""
+    ]
+  ],
+  videos: [
+    ""
+  ]
+},
+*/
 
 export const data = {
   "walk": {
@@ -54,7 +67,8 @@ export const data = {
         "of the jump, resulting in a super dash or a hyper dash.",
         "After dashing, Madeline loses her dashable state (indicated by her blue hair) and does not regain " +
         "her dash until she becomes grounded or gets a dash refill.",
-        "recovery time"
+        "recovery time",
+        "Dashes can be both extended and reversed."
       ],
       [
         "<b>Speed ",
@@ -101,5 +115,74 @@ export const data = {
       "https://www.youtube.com/watch?v=ksZh-FHuKpk",
       "https://www.youtube.com/watch?v=7JpjEdULNbA"
     ]
-  }
+  },
+  "wavedash": {
+    title: "Wave dash",
+    text: [
+      [
+        "A wave dash, very simply, is a hyperdash that starts in the air.",
+        "Often times, wave dashes are done with down diagonal dashes, but they can also be done with horizontal " +
+        "dashes by using the demodash."
+      ]
+    ],
+    videos: [
+      ""
+    ]
+  },
+  "extension": {
+    title: "Extension",
+    text: [
+      [
+        "Both super dashes and hyper dashes are able to be extended, which gives Madeline her dash " +
+        "back as soon as she begins the dash. This is possible because the dash gives Madeline her dash back " +
+        "if she is grounded 10 frames after the beginning of the dash and jumping out of the dash results in a super/hyper " +
+        "until the 14th frame. This provides a 4 frame window at the end of the dash for extension."
+      ],
+      [
+        "visual cue: hair color",
+        "cant dash immediately even though she gets dash state back because of the 15 frame dash cooldown",
+        "This means if Madeline jumps on frame 10 of her hyper dash, she cannot dash again for 5 frames.",
+        "Extended supers and hypers can also be reversed."
+      ]
+    ],
+    videos: [
+      "https://www.youtube.com/watch?v=h_lQ2tMgLVM"
+    ]
+  },
+  "reversal": {
+      title: "Reversal",
+    text: [
+      [
+        "Super dashes and hyper dashes can be 'reversed,' meaning that the super/hyper sends Madeline " +
+        "in the opposite direction of the original dash. This is done by holding the opposite direction " +
+        "from the dash when jump is pressed.",
+        "Ex. If dashing left, press and hold right before pressing jump to perform a reverse super to the " +
+        "the right."
+      ],
+      [
+        "Reverse supers and hypers can also be extended."
+      ]
+    ],
+    videos: [
+      "https://www.youtube.com/watch?v=h_lQ2tMgLVM"
+    ]
+  },
+  "coyote": {
+    title: "Coyote Frames",
+    text: [
+      [
+        "Whenever Madeline falls or slides off of a grounded surface and becomes airborne, " +
+        "she retains the ability to jump for 5 frames.",
+        "These 5 frames also apply to dashes that slide off the sides of platforms, " +
+        "allowing Madeline to seemingly hyper/super off of air."
+      ],
+      [
+        "Madeline is also given coyote frames when she exits a dream block, which is what allows " +
+        "her to jump out of them and dream hyper."
+      ]
+    ],
+    videos: [
+      "https://www.youtube.com/watch?v=h_lQ2tMgLVM"
+    ]
+  },
 }

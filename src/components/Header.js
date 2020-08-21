@@ -9,7 +9,7 @@ class Header extends React.Component {
       <div className="header">
         <div className="inner_header">
           <Link to="/">
-            <img src={icon} alt="strawberry"/>
+            <img src={icon} className="header_img" alt="strawberry"/>
             <div className="logo_container">
               <h1>Celeste <span>Mechanics</span></h1>
             </div>

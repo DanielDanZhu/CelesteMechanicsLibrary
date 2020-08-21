@@ -30,6 +30,13 @@ img{
   float: left;
 }
 
+.header_img{
+  height: 100%;
+  width: height;
+  vertical-align: bottom;
+  float: left;
+}
+
 .logo_container{
   height: 100%;
   display: table;

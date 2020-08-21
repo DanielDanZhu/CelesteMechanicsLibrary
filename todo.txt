@@ -11,7 +11,8 @@
 - content:
   [ ] concept videos
   [ ] tricks library
-  [ ] populate json
+
+- articles
   - [o] Walk
   - [x] Jump
   - [x] Dash
@@ -33,6 +34,51 @@
   - [ ] Demodash
   - [ ] Corner boost
   - [x] Coyote frames
+  - [ ] Spike jump
+  - [ ] Neutral Walljump
+  - [ ] Buffer System
+  - [ ] Ceiling pop
+  - [ ] Screen Transitions
+  - [ ] Red strawerries
+  - [ ] Moving blocks
+  - [ ] Breakable blocks
+  - [ ] Activateable blocks
+  - [ ] Crumble blocks
+  - [ ] Dream blocks
+  - [ ] Keys
+  - [ ] Bubbles
+  - [ ] Wind
+  - [ ] Crystal theo
+  - [ ] Seekers
+  - [ ] Feathers
+  - [ ] Bumpers
+  - [ ] Water
+  - [ ] Dash refill
+  - [ ] Cassettes
+  - [ ] Crystal hearts
+
+- videos
+  - [x] Walk
+  - [o] Jump
+  - [ ] Dash
+  - [ ] Crouch
+  - [ ] Grab
+  - [ ] Super
+  - [ ] Hyper
+    - [ ] Wave dash
+    - [ ] Extension
+    - [ ] Reversal
+  - [ ] Bhop
+  - [ ] Wall bounce
+  - [ ] Corner kick
+  - [ ] Ultra
+    - [ ] Reverse hyper ultra
+    - [ ] Grounded Ultra
+    - [ ] Delayed Ultra
+    - [ ] Cutscene Ultra
+  - [ ] Demodash
+  - [ ] Corner boost
+  - [ ] Coyote frames
   - [ ] Spike jump
   - [ ] Neutral Walljump
   - [ ] Buffer System

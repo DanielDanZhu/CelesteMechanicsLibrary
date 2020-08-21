@@ -42,6 +42,9 @@ class App extends React.Component {
           <Route path="/dash">
             <Page name={"dash"}/>
           </Route>
+          <Route path="/grab">
+            <Page name={"grab"}/>
+          </Route>
           <Route path="/super">
             <Page name={"super"}/>
           </Route>

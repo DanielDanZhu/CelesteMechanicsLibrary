@@ -81,8 +81,39 @@ export const data = {
 
       ]
     ],
+    //
     videos: [
       "https://www.youtube.com/watch?v=9jHwwJgSTR4"
+    ]
+  },
+  "grab": {
+      title: "Grabbing",
+    text: [
+      [
+        "Grabbing is done by holding the designated grab key when Madeline is against a wall and either facing the wall or " +
+        "holding towards the wall. ",
+        "This gives Madeline the ability to scale up and down walls when holding up or down, as well as the ability to climb jump. " +
+        "Similar to other jumps, the height of the climb jump is based on how long the player holds jump, and there is no cooldown " +
+        "for being able to jump again."
+      ],
+      [
+        "<b>Stamina",
+        "Madeline has an initial stamina count of 110, which decreases when she stands still on a wall, and decreases faster when she " +
+        "is climbing upwards. Each climb jump decreases stamina by 27.5, meaning she can perform a maximum of four climb jumps.",
+        "Wall jumping away from the wall and climbing downwards do not deplete stamina.",
+        "Once Madeline's stamina reaches 20, she begins blinking red. While her stamina is still above 0, she can still hold on to " +
+        "the wall she was already on, climb jump, and activate blocks. When her stamina hits 0, she can only activate blocks.",
+        "At any point while Madeline is flashing red, she can collect crystals which will refill her stamina, even if she still has her dash." +
+        "Madeline also refills her stamina when she lands."
+      ],
+      [
+        "More info"
+      ]
+    ],
+    //1. hold the wall, climb up/climb down, climb jump with variable heights
+    //2. climb up until no stamina, climb jump 4 times til no stamina, collect dash crystal to refill, land to refill
+    videos: [
+      ""
     ]
   },
   "super": {

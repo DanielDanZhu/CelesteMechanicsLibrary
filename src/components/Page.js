@@ -29,7 +29,7 @@ class Page extends React.Component {
           <div class="video_wrapper">
             <ReactPlayer
               url={data[this.props.name].videos[i]}
-              controls={true}
+              controls={false}
               volume={0}
               loop={true}
               playing={true}

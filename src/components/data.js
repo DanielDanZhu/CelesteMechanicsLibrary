@@ -23,7 +23,7 @@ export const data = {
       ]
     ],
     videos: [
-      "https://www.youtube.com/watch?v=qq0RXbhtFFs"
+      "https://youtu.be/TxNsSnKEX8Y"
     ]
   },
   "jump": {
@@ -53,7 +53,7 @@ export const data = {
       ]
     ],
     videos: [
-      "https://www.youtube.com/watch?v=qq0RXbhtFFs"
+      "https://youtu.be/RrGTnuyvjmQ"
     ]
   },
   "dash": {
